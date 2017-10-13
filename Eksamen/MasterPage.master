@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DJ Grunk</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/superhero/bootstrap.css" rel="stylesheet" />
+    
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="content">
+                <header>
+                    <img src="Images/dj_grunk_logo.png" />
+                </header>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="Default.aspx">DJ Grunk!</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="Default.aspx">Forside</a></li>
+                                <li><a href='Albums.aspx?sortby=1'>Musikbutik</a></li>
+                                <li><a href="Anmeldelser.aspx">Anmeldelser</a></li>
+                                <li><a href="Profil.aspx">Min Profil</a></li>
+                                <li><a href="Kontakt.aspx">Kontakt</a></li>
+                                <li>
+                                    <asp:LinkButton ID="lbtn_login" href="Login.aspx" runat="server">Login</asp:LinkButton><asp:LinkButton ID="lbtn_logud" Visible="false" OnClick="lbtn_logud_Click" runat="server">Logud</asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton Visible="false" ID="lbtn_admin" href="/Admin/Forside.aspx" runat="server">Admin Panel</asp:LinkButton></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+      
+        <footer class="footer">
+            <asp:Repeater runat="server" ID="repeater_footer">
+                <ItemTemplate><%# Eval("infoName") %> | <%# Eval("infoAddress") %> | <%# Eval("infoZip") %> | <%# Eval("infoPhone") %> | <%# Eval("infoEmail") %></ItemTemplate>
+            </asp:Repeater>
+        </footer>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<rss>
+  <channel>
+    <title>Title</title>
+    <link>http://localhost:37412/Albums.aspx?category_id=1</link>
+    <items>
+      <title>test</title>
+      <description>test</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=1&amp;albumId=1</link>
+    </items>
+    <items>
+      <title>St. Elsewhere</title>
+      <description>Gnarls Barkley</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=1&amp;albumId=5</link>
+    </items>
+    <items>
+      <title>All The Roadrunning</title>
+      <description>Knopfler &amp; Harris</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=1&amp;albumId=12</link>
+    </items>
+  </channel>
+</rss>

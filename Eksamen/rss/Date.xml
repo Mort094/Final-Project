@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<rss>
+  <channel>
+    <title>Date</title>
+    <link>http://localhost:37412/Albums.aspx?category_id=4</link>
+    <items>
+      <title>Stadium Arcadium</title>
+      <description>Red Hot Chili Peppers</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=4&amp;albumId=4</link>
+    </items>
+  </channel>
+</rss>

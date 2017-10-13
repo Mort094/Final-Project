@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<rss>
+  <channel>
+    <title>Artist</title>
+    <link>http://localhost:37412/Albums.aspx?category_id=2</link>
+    <items>
+      <title>Daddy Longleg</title>
+      <description>Skousen Niels</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=2&amp;albumId=6</link>
+    </items>
+    <items>
+      <title>aaa</title>
+      <description>aaa</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=2&amp;albumId=2</link>
+    </items>
+  </channel>
+</rss>

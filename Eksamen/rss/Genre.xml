@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<rss>
+  <channel>
+    <title>Genre</title>
+    <link>http://localhost:37412/Albums.aspx?category_id=3</link>
+    <items>
+      <title>Oral Fixation 2</title>
+      <description>Shakira</description>
+      <link>http://localhost:37412/Albums.aspx?category_id=3&amp;albumId=3</link>
+    </items>
+  </channel>
+</rss>
